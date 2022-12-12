@@ -5,17 +5,26 @@
   "type": "object",
   "required": [
     "id",
+    "age", 
     "cars"
   ],
   "properties": {
     "id": {
       "$ref": "../common.json#/definitions/id"
     },
+    "age": {
+      "$ref": "#/definitions/age"
+    },
     "cars": {
       "type": "array",
       "items": {
         "$ref": "../car/car.json"
       }
+    }
+  },
+  "definitions": {
+    "age": {
+      "type": "integer"
     }
   }
 }

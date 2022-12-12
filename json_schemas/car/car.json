@@ -4,15 +4,11 @@
   "title": "Person",
   "type": "object",
   "required": [
-    "id",
-    "vin"
+    "id"
   ],
   "properties": {
     "id": {
       "$ref": "../common.json#/definitions/id"
-    },
-    "vin": {
-      "type": "string"
     }
   }
 }
