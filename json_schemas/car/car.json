@@ -3,12 +3,8 @@
   "$id": "https://example.com/schemas/car/car.json",
   "title": "Person",
   "type": "object",
-  "required": [
-    "id"
-  ],
+  "required": [ "id" ],
   "properties": {
-    "id": {
-      "$ref": "../common.json#/definitions/id"
+     "id": { "$ref": "../common.json#/definitions/id" } 
     }
-  }
 }

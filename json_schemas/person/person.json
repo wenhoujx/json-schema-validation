@@ -3,28 +3,11 @@
   "$id": "https://example.com/schemas/person/person.json",
   "title": "Person",
   "type": "object",
-  "required": [
-    "id",
-    "age", 
-    "cars"
-  ],
+  "required": [ "id", "age", "cars" ],
   "properties": {
-    "id": {
-      "$ref": "../common.json#/definitions/id"
-    },
-    "age": {
-      "$ref": "#/definitions/age"
-    },
-    "cars": {
-      "type": "array",
-      "items": {
-        "$ref": "../car/car.json"
-      }
-    }
+    "id": { "$ref": "../common.json#/definitions/id" },
+    "age": { "$ref": "#/definitions/age" },
+    "cars": { "type": "array", "items": { "$ref": "../car/car.json" } }
   },
-  "definitions": {
-    "age": {
-      "type": "integer"
-    }
-  }
+  "definitions": { "age": { "type": "integer" } }
 }

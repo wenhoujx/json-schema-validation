@@ -34,6 +34,17 @@ if __name__ == "__main__":
             ],
         }
     )
+    person_validator.iter_errors({"id": "bad-person-id-1", "cars": []})
+    person_validator.iter_errors(
+        {
+            "id": "id-person-1",
+            "age": 30,
+            "cars": [
+                {"id": "bad-id", "vin": "vin-1"},
+                {"id": "id-car-2", "vin": "vin-2"},
+            ],
+        }
+    )
     print(
         [
             str(e)
