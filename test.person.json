@@ -1,0 +1,13 @@
+{
+  "id": "id-person-1",
+  "cars": [
+    {
+      "id": "bad-id",
+      "vin": "vin-1"
+    },
+    {
+      "id": "id-car-2",
+      "vin": "vin-2"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "https://example.com/schemas/person/person.json",
+  "title": "Person",
+  "type": "object",
+  "required": [
+    "id",
+    "cars"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "../common.json#/definitions/id"
+    },
+    "cars": {
+      "type": "array",
+      "items": {
+        "$ref": "../car/car.json"
+      }
+    }
+  }
+}

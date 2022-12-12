@@ -1,0 +1,11 @@
+{
+    "python.formatting.provider": "black",
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/*.person.json"
+            ],
+            "url": "./json_schemas/person/person.json"
+        }
+    ]
+}

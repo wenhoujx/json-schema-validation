@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "https://example.com/schemas/car/car.json",
+  "title": "Person",
+  "type": "object",
+  "required": [
+    "id",
+    "vin"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "../common.json#/definitions/id"
+    },
+    "vin": {
+      "type": "string"
+    }
+  }
+}
